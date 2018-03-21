@@ -7,50 +7,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Bootstrap Tutorial</title>
-  <link rel="stylesheet" href="./node_modules/bootstrap-rtl/dist/css/bootstrap-rtl.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ 
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./node_modules/bootstrap-rtl/dist/css/bootstrap-rtl.min.css">
   <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head>
 
 
 <body>
+  <script>
+    'use strict';
+    var app = angular.module('SmartPow', []);
+  </script>
 
-  <div class="container-fluid">
-    <h3>RTL PAGE </h3>
-    <p>This is some text.</p>
-<div class="row">
-<div class="col-md-4">
+<h1>Test Page</h1>
 
-    <div class="panel panel-success" dir="ltr">
-        <div class="panel-heading">LTR PANEL</div>
-        <div class="panel-body show-grid"><p>Some content here</p>
+  <div class="panel panel-danger" dir="rtl">
+    
+    <div class="panel-heading">RTL PANEL</div>
+
+    <div class="panel-body show-grid">
+      <p>Some content here</p>
+      <br>
+      <div class="col-md-8">
+
+          <span>Controls1</span>
+  
+        </div>
         <div class=" col-md-4 ">
-          <div class="row ">
-            <span>CS : 123</span><br>
-            <span>CS : 123</span><br>
-            <span>CS : 123</span><br>
-            <span>CS : 123</span><br>
-          </div>
+            <span>Controls2</span>
+         
+  
+        </div>
 
-        </div>
-        <div class="col-md-8">
-         
-            <span>Controls</span>
-         
-        </div>
-     
-      </div>
+
     </div>
-
   </div>
-</div>
-</div>
+  <!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+
+  <div class="panel panel-success" dir="ltr">
+    <div class="panel-heading">LTR PANEL</div>
+    <div class="panel-body show-grid">
+      <p>Some content here</p>
+      <br>
+      <div class="col-md-8">
+
+        <span>Controls1</span>
+
+      </div>
+      <div class=" col-md-4 ">
+          <span>Controls2</span>
+       
+
+      </div>
 
 
-
+    </div>
+  </div>
 
 </body>
+
 </html>
